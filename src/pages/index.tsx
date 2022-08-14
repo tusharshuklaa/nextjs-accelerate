@@ -1,23 +1,39 @@
 import type { NextPage } from "next";
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
-import utilStyles from '../styles/utils.module.css';
+import { Header } from "../components/header/header";
+import { Welcome } from "../components/welcome";
+import { SITE_TITLE } from "../utils/contants";
+import { Container } from './../components/container';
+import { IconContext } from "react-icons";
 
-const Home: NextPage = () => {
+const LandingPage: NextPage = () => {
   return (
-    <Layout home>
+    <>
       <Head>
-        <title>{siteTitle}</title>
+        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Learn how to build a personal website using Next.js"
+        />
+        <meta
+          property="og:image"
+          content={`https://og-image.vercel.app/${encodeURI(
+            SITE_TITLE
+          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+        />
+        <meta name="og:title" content={SITE_TITLE} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <title>{SITE_TITLE}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>[Hey, I’m Tushar and I’m here to build an amazinf next js template with typescript, tailwind and lot many stuff]</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
-      </section>
-    </Layout>
+
+      <IconContext.Provider value={{ color: "#0da5e9", style: { verticalAlign: 'middle' }}}>
+        <Header />
+        <Container className="py-2">
+          <Welcome />
+        </Container>
+      </IconContext.Provider>
+    </>
   );
 };
 
-export default Home;
+export default LandingPage;
