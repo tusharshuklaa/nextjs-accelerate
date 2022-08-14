@@ -1,6 +1,13 @@
 {
-  "name": "next-app-boilerplate",
+  "name": "nextjs-accelerate",
+  "description": "Next Accelerate boilerplate code with TypeScript, NextJS, and Tailwind",
   "version": "0.1.0",
+  "author": "Tushar Shukla",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tusharshuklaa/nextjs-accelerate.git"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -25,5 +32,17 @@
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.7",
     "typescript": "4.7.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
