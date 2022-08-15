@@ -1,12 +1,21 @@
-import type { NextPage } from "next";
+import { useMemo } from 'react';
+import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Header } from "../components/header/header";
-import { Welcome } from "../components/welcome";
-import { SITE_TITLE } from "../utils/contants";
-import { Container } from './../components/container';
-import { IconContext } from "react-icons";
+import { IconContext } from 'react-icons';
+import { Header } from '../components/header/header';
+import { Welcome } from '../components/welcome';
+import { SITE_TITLE } from '../utils/contants';
+import { Container } from '../components/container';
 
 const LandingPage: NextPage = () => {
+  const iconStyles = useMemo(
+    () => ({
+      color: '#0da5e9',
+      style: { verticalAlign: 'middle' },
+    }),
+    []
+  );
+
   return (
     <>
       <Head>
@@ -26,8 +35,9 @@ const LandingPage: NextPage = () => {
         <title>{SITE_TITLE}</title>
       </Head>
 
-      <IconContext.Provider value={{ color: "#0da5e9", style: { verticalAlign: 'middle' }}}>
+      <IconContext.Provider value={iconStyles}>
         <Header />
+
         <Container className="py-2">
           <Welcome />
         </Container>
