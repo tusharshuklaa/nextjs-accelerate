@@ -46,13 +46,9 @@
         "unnamedComponents": "arrow-function"
       }
     ],
-    // Use function hoisting to improve code readability
-    "no-use-before-define": [
-      "error",
-      { "functions": false, "classes": true, "variables": true }
-    ],
     // Allow most functions to rely on type inference. If the function is exported, then `@typescript-eslint/explicit-module-boundary-types` will ensure it's typed.
     "@typescript-eslint/explicit-function-return-type": "off",
+    // Use function hoisting to improve code readability
     "@typescript-eslint/no-use-before-define": [
       "error",
       {

@@ -1,5 +1,6 @@
 {
   "recommendations": [
-    "amatiasq.sort-imports"
+    "amatiasq.sort-imports",
+    "stylelint.vscode-stylelint"
   ]
 }
