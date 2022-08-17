@@ -1,6 +1,6 @@
-import classNames from 'classnames';
 import { FC } from 'react';
 import { MdArrowRightAlt } from 'react-icons/md';
+import classNames from 'classnames';
 import { SITE_TITLE } from '../../utils/contants';
 
 export enum LogoTypes {
