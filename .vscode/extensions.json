@@ -1,6 +1,11 @@
 {
   "recommendations": [
     "amatiasq.sort-imports",
-    "stylelint.vscode-stylelint"
+    "stylelint.vscode-stylelint",
+    "bradlc.vscode-tailwindcss",
+    "editorconfig.editorconfig",
+    "firsttris.vscode-jest-runner",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint"
   ]
 }
