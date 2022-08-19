@@ -32,3 +32,10 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+### Helpful Videos
+
+- [Translating a Custom Design System to Tailwind CSS](https://www.youtube.com/watch?v=cZc4Jn5nK3k&ab_channel=TailwindLabs)
+- [Introduction to Tailwind](https://www.youtube.com/playlist?list=PLu0W_9lII9ahwFDuExCpPFHAK829Wto2O)
+- [Theming Tailwind with CSS Variables](https://www.youtube.com/watch?v=MAtaT8BZEAo&ab_channel=TailwindLabs)
+- [Tailwind CSS | Dark & Light Theme Switcher](https://www.youtube.com/watch?v=oMOe_32M6ss&ab_channel=JohnKomarnicki)
