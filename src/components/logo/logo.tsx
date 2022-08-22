@@ -1,6 +1,6 @@
+import classNames from 'classnames';
 import { FC } from 'react';
 import { MdArrowRightAlt } from 'react-icons/md';
-import classNames from 'classnames';
 import { SITE_TITLE } from '../../utils/contants';
 
 export enum LogoTypes {
@@ -24,14 +24,18 @@ export const Logo: FC<LogoProps> = ({
   const containerClasses = classNames(
     isLarge ? 'flex-col' : '',
     'inline-flex',
-    'items-center'
+    'items-center',
+    'text-heading'
   );
   const initialsClasses = classNames(
-    isLarge ? 'w-40 h-40 text-7xl' : 'w-8 h-8',
+    isLarge ? 'w-40 h-40 text-7xl' : 'w-8 h-8 text-xs',
     'inline-flex',
+    'border',
+    'border-current',
     'items-center',
     'justify-center',
-    'bg-sky-500',
+    'rounded-full',
+    'text-highlight',
     'rounded-full'
   );
   const titleClasses = classNames(
