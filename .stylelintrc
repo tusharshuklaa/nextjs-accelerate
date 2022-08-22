@@ -11,7 +11,7 @@
   ],
   "rules": {
     "color-format/format": {
-      "format": "hsla"
+      "format": "rgba"
     },
     "plugin/declaration-block-no-ignored-properties": true,
     "at-rule-no-unknown": [
