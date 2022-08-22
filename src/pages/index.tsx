@@ -1,16 +1,16 @@
-import { useMemo } from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { useMemo } from 'react';
 import { IconContext } from 'react-icons';
+import { Container } from '../components/container';
 import { Header } from '../components/header/header';
+import { ThemeSwitcher } from '../components/themeSwitcher';
 import { Welcome } from '../components/welcome';
 import { SITE_TITLE } from '../utils/contants';
-import { Container } from '../components/container';
 
 const LandingPage: NextPage = () => {
   const iconStyles = useMemo(
     () => ({
-      color: '#0da5e9',
       style: { verticalAlign: 'middle' },
     }),
     []
@@ -41,6 +41,7 @@ const LandingPage: NextPage = () => {
         <Container className="py-2">
           <Welcome />
         </Container>
+        <ThemeSwitcher />
       </IconContext.Provider>
     </>
   );
