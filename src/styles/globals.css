@@ -29,7 +29,7 @@
   }
 }
 
-.theme-dark {
+[data-theme='dark'] {
   --color-accent: 102, 255, 219;
   --color-background: 10, 24, 46;
   --color-fill: 17, 34, 64;
@@ -44,7 +44,7 @@
   --color-edge: 35, 52, 83;
 }
 
-.theme-custom {
+[data-theme='custom'] {
   --color-accent: 77, 230, 194;
   --color-background: 35, 49, 71;
   --color-fill: 42, 59, 89;

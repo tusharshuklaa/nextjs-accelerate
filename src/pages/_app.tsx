@@ -1,12 +1,13 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import type { AppProps } from 'next/app';
-import { ThemeProvider } from '../hooks/use-theme';
+import { FC } from 'react';
+import { PageProvider } from '../components/pageProvider';
 import '../styles/globals.css';
 
-const MyApp = ({ Component, pageProps }: AppProps) => (
-  <ThemeProvider>
+const App: FC<AppProps> = ({ Component, pageProps }) => (
+  <PageProvider>
     <Component {...pageProps} />
-  </ThemeProvider>
+  </PageProvider>
 );
 
-export default MyApp;
+export default App;
