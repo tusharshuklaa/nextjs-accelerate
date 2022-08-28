@@ -1,16 +1,11 @@
 import { FC } from 'react';
+import { TestableComponent } from '../../models';
 
-interface ContainerProps {
-  testId?: string;
-  className?: string;
-  children: React.ReactNode;
-}
-
-export const Container: FC<ContainerProps> = ({
+export const Container: FC<TestableComponent> = ({
   testId = 'container',
   className = '',
   children,
-}: ContainerProps) => (
+}) => (
   <section data-testid={testId} className={`max-w-6xl m-auto ${className}`}>
     {children}
   </section>
