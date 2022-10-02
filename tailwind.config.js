@@ -51,7 +51,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      satoshi: ['Satoshi', 'sans-serif'],
+      satoshi: ['Satoshi-Regular', 'sans-serif'],
       inter: ['Inter', 'sans-serif'],
     },
   },

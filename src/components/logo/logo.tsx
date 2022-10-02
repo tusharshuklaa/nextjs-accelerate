@@ -41,7 +41,9 @@ export const Logo: FC<LogoProps> = ({
   const titleClasses = classNames(
     isLarge ? 'mt-4 text-5xl' : 'ml-2',
     'inline-flex',
-    'capitalize'
+    'capitalize',
+    'font-satoshi',
+    'font-bold'
   );
 
   return (

@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* FONTS */
+
+@font-face {
+  font-display: swap;
+  font-family: Satoshi-Regular;
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Satoshi-Regular.woff2') format('woff2'),
+    url('/fonts/Satoshi-Regular.woff') format('woff'),
+    url('/fonts/Satoshi-Regular.ttf') format('truetype');
+}
+
 /* colors have rgb values without the 'rgb' text and parenthesis becaue it is being customized in tailwind.config.js */
 @layer base {
   /* default light theme */
