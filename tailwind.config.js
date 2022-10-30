@@ -49,6 +49,10 @@ module.exports = {
         highlight: withOpacity('--color-accent'),
         base: withOpacity('--color-fill'),
       },
+      minHeight: {
+        half: '50%',
+        'half-screen': '50vh',
+      }
     },
     fontFamily: {
       satoshi: ['Satoshi-Regular', 'sans-serif'],
